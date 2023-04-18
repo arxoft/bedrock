@@ -17,5 +17,5 @@ add_filter('excerpt_more', function () {
 
 
 add_filter('body_class', function($classes) {
-    return $classes[] = 'text-gray-800 antialiased';
+    return $classes[] = 'font-body antialiased text-[#41454c] bg-[#FFFFFF] dark:text-[#b3c3d9] dark:bg-[#000000]';
 });

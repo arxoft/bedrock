@@ -3,7 +3,7 @@
 </a>
 
 @include('sections.header')
-@include('sections.slider')
+{{-- @include('sections.slider') --}}
 
   <main id="main" class="main">
     @yield('content')

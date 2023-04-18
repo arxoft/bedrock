@@ -1,69 +1,71 @@
 <header class="banner">
 
-    {{-- <a class="brand" href="{{ home_url('/') }}">
-        {!! $siteName !!}
-    </a> --}}
-
-    {{-- @if (has_nav_menu('primary_navigation'))
-    <nav class="nav-primary" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'echo' => false]) !!}
-    </nav>
-    @endif --}}
-
-    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 ">
-        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-            <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                    href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation">{!! get_bloginfo('name') !!}</a>
-                <button
-                    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-                    type="button" onclick="toggleNavbar('example-collapse-navbar')">
-                    <i class="text-white fas fa-bars"></i>
-                </button>
-            </div>
-            <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-                id="example-collapse-navbar">
-                <ul class="flex flex-col lg:flex-row list-none mr-auto">
-                    <li class="flex items-center">
-                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing">
-                            <i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
-                            Docs</a>
-                    </li>
+    <div class="relative z-10">
+        <div class="px-4 py-5 mx-auto border-b-2 lg:max-w-screen-xl lg:px-8">
+            <div class="flex items-center justify-between relative"><a class="inline-flex items-center"
+                    href="#"><span class="ml-2 text-xl tracking-wide font-semibold">R</span></a>
+                <ul class="items-center hidden space-x-8 lg:flex">
+                    <li class=""><a
+                            class="text-sm tracking-wide transition-colors duration-200 hover:text-primary-700 uppercase font-bold lg:font-light xl:font-medium"
+                            href="#">Why Us?</a></li>
+                    <li class=""><a
+                            class="text-sm tracking-wide transition-colors duration-200 hover:text-primary-700 uppercase font-bold lg:font-light xl:font-medium"
+                            href="#">OUR STORY</a></li>
+                    <li class=""><a
+                            class="text-sm tracking-wide transition-colors duration-200 hover:text-primary-700 uppercase font-bold lg:font-light xl:font-medium"
+                            href="#">PROCESS</a></li>
+                    <li class=""><a
+                            class="text-sm tracking-wide transition-colors duration-200 hover:text-primary-700 uppercase font-bold lg:font-light xl:font-medium"
+                            href="#">TESTIMONIALS</a></li>
                 </ul>
-                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-                    <li class="flex items-center">
-                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="#pablo">
-                            <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
-                            <span class="lg:hidden inline-block ml-2">Share</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center">
-                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="#pablo">
-                            <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
-                            <span class="lg:hidden inline-block ml-2">Tweet</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center">
-                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="#pablo">
-                            <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
-                            <span class="lg:hidden inline-block ml-2">Star</span>
-                        </a>
-                    </li>
-                    <li class="flex items-center">
-                        <button
-                            class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                            type="button" style="transition: all 0.15s ease 0s;">
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                            Download
-                        </button>
-                    </li>
+                <ul class="items-center hidden space-x-8 lg:flex">
+                    <li class=""><a
+                            class="inline-flex items-center justify-center h-12 px-6 tracking-wide text-white transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-primary rounded-full text-[11px] leading-4 uppercase font-bold border-2 border-primary"
+                            href="#">GET IN TOUCH</a></li>
+                </ul>
+                <div class="hidden relative">
+                    <div
+                        class="inline-flex w-full justify-center rounded-md font-medium dark:text-white hover:bg-opacity-30 text-[23px]">
+                        <span class="ml-2"><svg class="ml-2" stroke="currentColor" fill="currentColor"
+                                stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                </path>
+                            </svg></span></div>
+                    <ul
+                        class="absolute right-0 text-gray-900 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg">
+                        <li class="group flex rounded-md items-center w-full px-2 py-2 text-sm"><a class=""
+                                href="#">Menu Item 1</a></li>
+                        <li class="group flex rounded-md items-center w-full px-2 py-2 text-sm"><a class=""
+                                href="#">Menu Item 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto py-[27px]">
+            <div class="max-w-[400px] m-auto max-h-[732px] text-center py-[30px] space-y-5 max-w-full">
+                <p
+                    class="mx-auto uppercase text-[11px] leading-4 font-bold text-primary-500 lg:text-xl lg:max-w-[335px] lg:leading-7 xl:text-[23px] xl:leading-8 xl:max-w-[379px]">
+                    Welcome</p>
+                <h1
+                    class="tracking-tighter font-bold font-heading text-[39.5px] leading-[44.5px] lg:text-[47px] lg:leading-[53px] xl:text-7xl xl:leading-[88px]">
+                    Your office design identity</h1>
+                <p
+                    class="max-w-[286px] mx-auto text-base leading-[21px] lg:text-xl lg:max-w-[335px] lg:leading-7 xl:text-[23px] xl:leading-8 xl:max-w-[379px]">
+                    Create screens directly in Method or add your images from Sketch.</p>
+            </div>
+            <div class="px-3">
+                <ul class="items-center flex flex-col justify-center gap-2 md:flex-row">
+                    <li class=""><a
+                            class="inline-flex items-center justify-center h-12 px-6 tracking-wide text-white transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-primary rounded-full text-[11px] leading-4 uppercase font-bold border-2 border-primary"
+                            href="#">ESTIMATE PROJECT</a></li>
+                    <li class=""><a
+                            class="inline-flex items-center justify-center h-12 px-6 tracking-wide transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none rounded-full border-2 text-[11px] leading-4 uppercase font-bold"
+                            href="#">GET INSPIRED</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
 
 </header>

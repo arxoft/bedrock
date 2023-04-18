@@ -1,331 +1,365 @@
 @extends('layouts.front-page')
 
 @section('content')
-    <section class="pb-20 bg-gray-300 -mt-24">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap">
-                <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                        <div class="px-4 py-5 flex-auto">
-                            <div
-                                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <h6 class="text-xl font-semibold">Awarded Agency</h6>
-                            <p class="mt-2 mb-4 text-gray-600">
-                                Divide details about your product or agency work into parts.
-                                A paragraph describing a feature will be enough.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-4/12 px-4 text-center">
-                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                        <div class="px-4 py-5 flex-auto">
-                            <div
-                                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                                <i class="fas fa-retweet"></i>
-                            </div>
-                            <h6 class="text-xl font-semibold">Free Revisions</h6>
-                            <p class="mt-2 mb-4 text-gray-600">
-                                Keep you user engaged by providing meaningful information.
-                                Remember that by this time, the user is curious.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                        <div class="px-4 py-5 flex-auto">
-                            <div
-                                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                                <i class="fas fa-fingerprint"></i>
-                            </div>
-                            <h6 class="text-xl font-semibold">Verified Company</h6>
-                            <p class="mt-2 mb-4 text-gray-600">
-                                Write a few lines about each one. A paragraph describing a
-                                feature will be enough. Keep you user engaged!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-wrap items-center mt-32">
-                <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+    {{-- {# THREE PICS #} --}}
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+            <div class="grid-cols-1 grid gap-6 md:grid-cols-3">
+                <a class="group h-80 flex items-end bg-gray-100 overflow-hidden shadow-lg relative p-4 rounded-global lg:h-[450px] xl:h-[600px] 2xl:h-[700px]"
+                    href="#"><img
+                        class="object-cover w-full h-full object-center absolute inset-0 group-hover:scale-110 transition duration-200 bg-gray-50"
+                        alt="No alt"
+                        src="https://images.unsplash.com/photo-1655635949348-953b0e3c140a?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3308&amp;amp;q=80" />
                     <div
-                        class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
-                        <i class="fas fa-user-friends text-xl"></i>
+                        class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none">
                     </div>
-                    <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                        Working with us is a pleasure
-                    </h3>
-                    <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                        @while (have_posts())
-                            @php(the_post())
-                            {{-- @include('partials.page-header') --}}
-                            @includeFirst(['partials.content-page', 'partials.content'])
-                        @endwhile
-                    </p>
-                    <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                        The kit comes with three pre-built pages to help you get started
-                        faster. You can change the text and images and you're good to
-                        go. Just make sure you enable them first via JavaScript.
-                    </p>
-                    <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                        class="font-bold text-gray-800 mt-8">Check Tailwind Starter Kit!</a>
-                </div>
-                <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                    <div class="flex flex-col relative">
+                        <span class="text-gray-300">Home</span>
+                        <span class="text-white text-lg lg:text-xl font-semibold">Bicycle</span>
+                    </div>
+                </a>
+                <a class="group h-80 flex items-end overflow-hidden shadow-lg relative p-4 rounded-global bg-gray-50 lg:h-[450px] xl:h-[600px] 2xl:h-[700px]"
+                    href="#"><img
+                        class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+                        alt="No alt"
+                        src="https://images.unsplash.com/photo-1655635131607-3202827a52a2?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=2532&amp;amp;q=80" />
                     <div
-                        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-                        <img alt="..."
-                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-                            class="w-full align-middle rounded-t-lg" />
-                        <blockquote class="relative p-8 mb-4">
-                            <svg preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 583 95"
-                                class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
-                                <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
-                            </svg>
-                            <h4 class="text-xl font-bold text-white">
-                                Top Notch Services
-                            </h4>
-                            <p class="text-md font-light mt-2 text-white">
-                                The Arctic Ocean freezes every winter and much of the
-                                sea-ice then thaws every summer, and that process will
-                                continue whatever happens.
-                            </p>
-                        </blockquote>
+                        class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none">
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="relative py-20">
-        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style="height: 80px;">
-            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="none"
-                version="1.1" viewbox="0 0 2560 100" x="0" y="0">
-                <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
-        <div class="container mx-auto px-4">
-            <div class="items-center flex flex-wrap">
-                <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-                    <img alt="..." class="max-w-full rounded-lg shadow-lg"
-                        src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" />
-                </div>
-                <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-                    <div class="md:pr-12">
-                        <div
-                            class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                            <i class="fas fa-rocket text-xl"></i>
-                        </div>
-                        <h3 class="text-3xl font-semibold">A growing company</h3>
-                        <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                            The extension comes with three pre-built pages to help you get
-                            started faster. You can change the text and images and you're
-                            good to go.
-                        </p>
-                        <ul class="list-none mt-6">
-                            <li class="py-2">
-                                <div class="flex items-center">
-                                    <div>
-                                        <span
-                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                                            <i class="fas fa-fingerprint"></i>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-gray-600">
-                                            Carefully crafted components
-                                        </h4>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="py-2">
-                                <div class="flex items-center">
-                                    <div>
-                                        <span
-                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                                            <i class="fab fa-html5"></i>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-gray-600">Amazing page examples</h4>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="py-2">
-                                <div class="flex items-center">
-                                    <div>
-                                        <span
-                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                                            <i class="far fa-paper-plane"></i>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-gray-600">Dynamic components</h4>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="flex flex-col relative">
+                        <span class="text-gray-300">Modern</span>
+                        <span class="text-white text-lg lg:text-xl font-semibold">e-Bike</span>
                     </div>
-                </div>
+                </a>
+                <a class="group h-80 flex items-end overflow-hidden shadow-lg relative p-4 rounded-global bg-gray-50 lg:h-[450px] xl:h-[600px] 2xl:h-[700px]"
+                    href="#"><img
+                        class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+                        alt="No alt"
+                        src="https://images.unsplash.com/photo-1655635131607-3202827a52a2?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=2532&amp;amp;q=80" />
+                    <div
+                        class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none">
+                    </div>
+                    <div class="flex flex-col relative">
+                        <span class="text-gray-300">Modern</span>
+                        <span class="text-white text-lg lg:text-xl font-semibold">e-Bike</span>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
-    <section class="pt-20 pb-48">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-center text-center mb-24">
-                <div class="w-full lg:w-6/12 px-4">
-                    <h2 class="text-4xl font-semibold">Here are our heroes</h2>
-                    <p class="text-lg leading-relaxed m-4 text-gray-600">
-                        According to the National Oceanic and Atmospheric
-                        Administration, Ted, Scambos, NSIDClead scentist, puts the
-                        potentially record maximum.
-                    </p>
-                </div>
+    </div>
+
+
+    {{-- {# FEATURES #} --}}
+    <div class="py-6">
+
+        <div class="grid container mx-auto px-4 grid-cols-1 border-b-2 md:grid-cols-3">
+            <div class="text-center mb-[52px] md:w-5/6 md:mx-auto md:max-w-2xl">
+                <span class="mx-auto text-black w-[50px]">
+                    <span class="mx-auto text-black w-[50px]">
+                        <svg class="mx-auto text-black w-[50px]" class="mx-auto text-black w-[50px]"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Layer_1" x="0px" y="0px" viewbox="0 0 499.8 499.8"
+                            style="enable-background:new 0 0 499.8 499.8;" xml:space="preserve">
+                            <g>
+                                <polygon
+                                    points="411.89,274.955 397.31,289.335 471.04,364.065 397.31,438.795 411.89,453.175 499.8,364.065"
+                                    fill="currentColor"></polygon>
+                            </g>
+                            <g>
+                                <polygon
+                                    points="102.48,289.335 87.9,274.955 0,364.065 87.9,453.175 102.48,438.795 28.76,364.065"
+                                    fill="currentColor"></polygon>
+                            </g>
+                            <g>
+                                <path
+                                    d="M409.83,46.625H89.97l-57.33,114.66l217.26,217.26l217.26-217.26L409.83,46.625z M397.17,67.105l40.96,81.92H326.843 l-13.656-81.92H397.17z M207.373,67.105h85.054l13.656,81.92H193.717L207.373,67.105z M102.63,67.105h83.983l-13.656,81.92H61.67 L102.63,67.105z M69.82,169.505h104.434l52.22,156.654L69.82,169.505z M195.834,169.505h108.133L249.9,331.696L195.834,169.505z M273.326,326.159l52.22-156.654H429.98L273.326,326.159z"
+                                    fill="currentColor"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </span>
+                <h1
+                    class="tracking-tighter text-black text-center dark:text-white text-2xl leading-10 my-[25px] font-semibold md:leading-[25px]">
+                    No hassle</h1>
+                <p class="text-center mt-2 text-base leading-6 tracking-tighter">It is a long established fact that a reader
+                    will be distracted by the readable content of a page when looking at its layout</p>
             </div>
-            <div class="flex flex-wrap">
+            <div class="text-center mb-[52px] md:w-5/6 md:mx-auto md:max-w-2xl">
+                <span class="mx-auto text-black w-[50px]">
+                    <span class="mx-auto text-black w-[50px]">
+                        <svg class="mx-auto text-black w-[50px]" class="mx-auto text-black w-[50px]"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Layer_1" x="0px" y="0px" viewbox="0 0 499.8 499.8"
+                            style="enable-background:new 0 0 499.8 499.8;" xml:space="preserve">
+                            <g>
+                                <polygon
+                                    points="411.89,274.955 397.31,289.335 471.04,364.065 397.31,438.795 411.89,453.175 499.8,364.065"
+                                    fill="currentColor"></polygon>
+                            </g>
+                            <g>
+                                <polygon
+                                    points="102.48,289.335 87.9,274.955 0,364.065 87.9,453.175 102.48,438.795 28.76,364.065"
+                                    fill="currentColor"></polygon>
+                            </g>
+                            <g>
+                                <path
+                                    d="M409.83,46.625H89.97l-57.33,114.66l217.26,217.26l217.26-217.26L409.83,46.625z M397.17,67.105l40.96,81.92H326.843 l-13.656-81.92H397.17z M207.373,67.105h85.054l13.656,81.92H193.717L207.373,67.105z M102.63,67.105h83.983l-13.656,81.92H61.67 L102.63,67.105z M69.82,169.505h104.434l52.22,156.654L69.82,169.505z M195.834,169.505h108.133L249.9,331.696L195.834,169.505z M273.326,326.159l52.22-156.654H429.98L273.326,326.159z"
+                                    fill="currentColor"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </span>
+                <h1
+                    class="tracking-tighter text-black text-center dark:text-white text-2xl leading-10 my-[25px] font-semibold md:leading-[25px]">
+                    Professional Support</h1>
+                <p class="text-center mt-2 text-base leading-6 tracking-tighter">It is a long established fact that a reader
+                    will be distracted by the readable content of a page when looking at its layout</p>
+            </div>
+            <div class="text-center mb-[52px] md:w-5/6 md:mx-auto md:max-w-2xl">
+                <span class="mx-auto text-black w-[50px]">
+                    <span class="mx-auto text-black w-[50px]">
+                        <svg class="mx-auto text-black w-[50px]" class="mx-auto text-black w-[50px]"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Layer_1" x="0px" y="0px" viewbox="0 0 499.8 499.8"
+                            style="enable-background:new 0 0 499.8 499.8;" xml:space="preserve">
+                            <g>
+                                <polygon
+                                    points="411.89,274.955 397.31,289.335 471.04,364.065 397.31,438.795 411.89,453.175 499.8,364.065"
+                                    fill="currentColor"></polygon>
+                            </g>
+                            <g>
+                                <polygon
+                                    points="102.48,289.335 87.9,274.955 0,364.065 87.9,453.175 102.48,438.795 28.76,364.065"
+                                    fill="currentColor"></polygon>
+                            </g>
+                            <g>
+                                <path
+                                    d="M409.83,46.625H89.97l-57.33,114.66l217.26,217.26l217.26-217.26L409.83,46.625z M397.17,67.105l40.96,81.92H326.843 l-13.656-81.92H397.17z M207.373,67.105h85.054l13.656,81.92H193.717L207.373,67.105z M102.63,67.105h83.983l-13.656,81.92H61.67 L102.63,67.105z M69.82,169.505h104.434l52.22,156.654L69.82,169.505z M195.834,169.505h108.133L249.9,331.696L195.834,169.505z M273.326,326.159l52.22-156.654H429.98L273.326,326.159z"
+                                    fill="currentColor"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </span>
+                <h1
+                    class="tracking-tighter text-black text-center dark:text-white text-2xl leading-10 my-[25px] font-semibold md:leading-[25px]">
+                    Customization</h1>
+                <p class="text-center mt-2 text-base leading-6 tracking-tighter">It is a long established fact that a reader
+                    will be distracted by the readable content of a page when looking at its layout</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    {{-- {# TEAM #} --}}
+    <div class="py-6">
+        <div class="px-4 py-12 mx-auto border-b-2 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-14">
+            <div class="md:w-5/6 md:mx-auto md:max-w-2xl">
+                <h1 class="text-slate-900 text-3xl text-center font-bold dark:text-white sm:text-4xl">Our Team</h1>
+                <p class="text-center text-lg mt-2">It is a long established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout</p>
+            </div>
+            <div class="grid gap-10 mx-auto mt-8 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
+
                 @if (have_rows('blocks'))
                     @while (have_rows('blocks'))
                         @php(the_row())
                         @if (have_rows('heros'))
                             @while (have_rows('heros'))
                                 @php(the_row())
-
-                                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                                    <div class="px-6">
-
-                                        {!! wp_get_attachment_image(get_sub_field('image')['ID'], 'thumbnail', false, [
-                                            'style' => 'max-width: 120px;',
-                                            'class' => 'shadow-lg rounded-full max-w-full mx-auto',
+                                <div class="">
+                                    <div class="relative pb-56 mb-4 rounded-global shadow lg:pb-64">
+                                        {!! wp_get_attachment_image(get_sub_field('image')['ID'], [333,333], false, [
+                                            // 'style' => 'max-width: 120px;',
+                                            'class' => 'absolute object-cover w-full h-full rounded-global bg-blue-100 object-center',
                                         ]) !!}
-                                        <div class="pt-6 text-center">
-                                            <h5 class="text-xl font-bold">{!! get_sub_field('name') !!}</h5>
-                                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                                                {!! get_sub_field('designation') !!}
-                                            </p>
-                                            <div class="mt-6">
-                                                @if (have_rows('social_media'))
-                                                    @while (have_rows('social_media'))
-                                                        @php(the_row())
-                                                        <button onClick="window.location='{!! get_sub_field('url') !!}';" target="_blank" class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                                    </div>
+                                    <div class="flex flex-col sm:text-center">
+                                        <p class="text-lg font-bold text-slate-900 dark:text-slate-100">
+                                            {!! get_sub_field('name') !!}</p>
+                                        <p class="mb-5 text-sm">{!! get_sub_field('designation') !!}</p>
+                                        <div class="flex items-center space-x-3 sm:justify-center">
+                                            @if (have_rows('social_media'))
+                                                @while (have_rows('social_media'))
+                                                    @php(the_row())
+                                                    <a class="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                                        href="{!! get_sub_field('url') !!}">
+                                                        <span class="h-5">
                                                             <i class="fab fa-{!! strtolower(get_sub_field('platform')) !!}"></i>
-                                                        </button>
-                                                    @endwhile
-                                                @endif
-
-                                            </div>
+                                                        </span>
+                                                    </a>
+                                                @endwhile
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
                             @endwhile
-                        @endif
-                    @endwhile
-                @endif
+                            @endif
+                        @endwhile
+                    @endif
             </div>
         </div>
-    </section>
-    <section class="pb-20 relative block bg-gray-900">
-        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style="height: 80px;">
-            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="none"
-                version="1.1" viewbox="0 0 2560 100" x="0" y="0">
-                <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
+    </div>
+
+
+    {{-- {# QUOTATION #} --}}
+    <div class="my-20">
+        <div class="max-w-[700px] mx-auto px-5">
+            <p class="text-center text-2xl leading-[38px]">“Lambda managed everything from furniture selection, purchase,
+                delivery and assembly, and have been a pleasure working with”</p>
+            <p
+                class="tracking-tighter text-center uppercase text-primary my-5 text-[11px] leading-4 font-bold md:text-xs md:leading-6">
+                Cameron Williamson</p>
         </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-            <div class="flex flex-wrap text-center justify-center">
-                <div class="w-full lg:w-6/12 px-4">
-                    <h2 class="text-4xl font-semibold text-white">Build something</h2>
-                    <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                        Put the potentially record low maximum sea ice extent tihs year
-                        down to low ice. According to the National Oceanic and
-                        Atmospheric Administration, Ted, Scambos.
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-wrap mt-12 justify-center">
-                <div class="w-full lg:w-3/12 px-4 text-center">
-                    <div
-                        class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                        <i class="fas fa-medal text-xl"></i>
-                    </div>
-                    <h6 class="text-xl mt-5 font-semibold text-white">
-                        Excelent Services
-                    </h6>
-                    <p class="mt-2 mb-4 text-gray-500">
-                        Some quick example text to build on the card title and make up
-                        the bulk of the card's content.
-                    </p>
-                </div>
-                <div class="w-full lg:w-3/12 px-4 text-center">
-                    <div
-                        class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                        <i class="fas fa-poll text-xl"></i>
-                    </div>
-                    <h5 class="text-xl mt-5 font-semibold text-white">
-                        Grow your market
-                    </h5>
-                    <p class="mt-2 mb-4 text-gray-500">
-                        Some quick example text to build on the card title and make up
-                        the bulk of the card's content.
-                    </p>
-                </div>
-                <div class="w-full lg:w-3/12 px-4 text-center">
-                    <div
-                        class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                        <i class="fas fa-lightbulb text-xl"></i>
-                    </div>
-                    <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
-                    <p class="mt-2 mb-4 text-gray-500">
-                        Some quick example text to build on the card title and make up
-                        the bulk of the card's content.
-                    </p>
-                </div>
+    </div>
+
+
+    {{-- {# OUR STORY #} --}}
+    <div class="grid-cols-2 gap-x-[131px] bg-secondary py-10 block xl:grid">
+        <div class="flex flex-col justify-center px-4">
+            <p
+                class="tracking-tighter uppercase text-primary my-5 text-[11px] leading-4 font-bold text-center md:text-xs md:leading-6 xl:text-left">
+                OUR STORY</p>
+            <h1
+                class="tracking-tighter font-bold font-heading text-[39.5px] leading-[44.5px] text-center text-black lg:text-[47px] lg:leading-[53px] xl:text-5xl xl:leading-[56px] xl:text-left">
+                Your office design identity</h1>
+            <p class="py-4 text-center xl:text-left">Work with an office interior designer to create the perfect looking
+                office space.</p>
+            <p class="py-4 text-center xl:text-left">Our office interior design service is an affordable way for you to
+                choose the right look for your space and most efficient floor plan for your chosen furniture.</p>
+            <div class="px-3 xl:px-0">
+                <ul class="items-center flex flex-col justify-center gap-2 md:flex-row xl:justify-start">
+                    <li class="">
+                        <a class="inline-flex items-center justify-center h-12 px-6 tracking-wide text-white transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-primary rounded-full text-[11px] leading-4 uppercase font-bold border-2 border-primary"
+                            href="#">ESTIMATE PROJECT</a>
+                    </li>
+                    <li class="">
+                        <a class="inline-flex items-center justify-center h-12 px-6 tracking-wide transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none rounded-full border-2 text-[11px] leading-4 uppercase font-bold"
+                            href="#">GET INSPIRED</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-    <section class="relative block py-24 lg:pt-0 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-                <div class="w-full lg:w-6/12 px-4">
-                    <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-                        <div class="flex-auto p-5 lg:p-10">
-                            <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-                            <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                                Complete this form and we will get back to you in 24 hours.
-                            </p>
-                            <div class="relative w-full mb-3 mt-8">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full
-                                    Name</label><input type="text"
-                                    class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                    placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+        <div class="">
+            <a class="group flex items-end overflow-hidden shadow-lg relative p-4 rounded-global bg-gray-50 my-4 h-[580px] w-full mx-auto px-4 lg:h-[450px] xl:h-[600px] 2xl:h-[700px]"
+                href="#"><img
+                    class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+                    alt="No alt"
+                    src="https://images.unsplash.com/photo-1655635131607-3202827a52a2?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=2532&amp;amp;q=80" />
+                <div
+                    class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none">
+                </div>
+                <div class="flex flex-col relative">
+                    <span class="text-gray-300">Modern</span>
+                    <span class="text-white text-lg lg:text-xl font-semibold">e-Bike</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    {{-- {# PROCESS #} --}}
+    <div class="py-10 block">
+        <div class="px-4">
+            <p
+                class="tracking-tighter uppercase text-primary my-5 text-[11px] leading-4 font-bold text-center md:text-xs md:leading-6 xl:text-left">
+                PROCESS</p>
+            <h1
+                class="tracking-tighter font-bold font-heading text-[39.5px] leading-[44.5px] text-center lg:text-[47px] lg:leading-[53px] xl:text-5xl xl:leading-[56px]">
+                Office interior design made easy</h1>
+            <p class="py-4 text-center">You can now design and furnish your office space at the click of a button.</p>
+            <section class="py-10">
+                <div class="mx-auto max-w-7xl">
+                    <div class="flex flex-wrap">
+                        <div class="p-4 md:w-1/2 xl:w-1/4">
+                            <div class="dark:bg-gray-900">
+                                <a class="" href="#"><img
+                                        class="rounded object-cover object-center mb-2 w-full h-[206px] xl:mb-0"
+                                        alt="No alt"
+                                        src="https://images.unsplash.com/photo-1635324944940-0c0a9c8f9bf1?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8M2QlMjBzcXVhcmV8ZW58MHx8MHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=800&amp;amp;q=60" /></a>
+                                <div class="p-6 rounded-lg dark:divide-undefined">
+                                    <h3
+                                        class="text-xs font-medium title-font text-primary mb-2 text-center uppercase tracking-tighter">
+                                        SUBTITLE</h3>
+                                    <h2
+                                        class="text-gray-900 title-font mb-0 font-heading dark:divide-undefined dark:divide-undefined dark:text-gray-200 text-center text-2xl leading-10 font-bold tracking-tighter">
+                                        Take our style form</h2>
+                                    <p class="text-center">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                        hexagon disrupt edison bulbche.</p>
+                                </div>
                             </div>
-                            <div class="relative w-full mb-3">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                    for="email">Email</label><input type="email"
-                                    class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                    placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                        </div>
+                        <div class="p-4 md:w-1/2 xl:w-1/4">
+                            <div class="dark:bg-gray-900">
+                                <a class="" href="#"><img
+                                        class="rounded object-cover object-center mb-2 w-full h-[206px] xl:mb-0"
+                                        alt="No alt"
+                                        src="https://images.unsplash.com/photo-1635324944940-0c0a9c8f9bf1?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8M2QlMjBzcXVhcmV8ZW58MHx8MHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=800&amp;amp;q=60" /></a>
+                                <div class="p-6 rounded-lg dark:divide-undefined">
+                                    <h3
+                                        class="text-xs font-medium title-font text-primary mb-2 text-center uppercase tracking-tighter">
+                                        Step 2</h3>
+                                    <h2
+                                        class="text-gray-900 title-font mb-0 font-heading dark:divide-undefined dark:divide-undefined dark:text-gray-200 text-center text-2xl leading-10 font-bold tracking-tighter">
+                                        Get an estimate</h2>
+                                    <p class="text-center">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                        hexagon disrupt edison bulbche.</p>
+                                </div>
                             </div>
-                            <div class="relative w-full mb-3">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                    for="message">Message</label>
-                                <textarea rows="4" cols="80"
-                                    class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                    placeholder="Type a message..."></textarea>
+                        </div>
+                        <div class="p-4 md:w-1/2 xl:w-1/4">
+                            <div class="dark:bg-gray-900">
+                                <a class="" href="#"><img
+                                        class="rounded object-cover object-center mb-2 w-full h-[206px] xl:mb-0"
+                                        alt="No alt"
+                                        src="https://images.unsplash.com/photo-1635324944940-0c0a9c8f9bf1?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8M2QlMjBzcXVhcmV8ZW58MHx8MHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=800&amp;amp;q=60" /></a>
+                                <div class="p-6 rounded-lg dark:divide-undefined">
+                                    <h3
+                                        class="text-xs font-medium title-font text-primary mb-2 text-center uppercase tracking-tighter">
+                                        Step 3</h3>
+                                    <h2
+                                        class="text-gray-900 title-font mb-0 font-heading dark:divide-undefined dark:divide-undefined dark:text-gray-200 text-center text-2xl leading-10 font-bold tracking-tighter">
+                                        Your project kicks off!</h2>
+                                    <p class="text-center">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                        hexagon disrupt edison bulbche.</p>
+                                </div>
                             </div>
-                            <div class="text-center mt-6">
-                                <button
-                                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                                    type="button" style="transition: all 0.15s ease 0s;">
-                                    Send Message
-                                </button>
+                        </div>
+                        <div class="p-4 md:w-1/2 xl:w-1/4">
+                            <div class="dark:bg-gray-900">
+                                <a class="" href="#"><img
+                                        class="rounded object-cover object-center mb-2 w-full h-[206px] xl:mb-0"
+                                        alt="No alt"
+                                        src="https://images.unsplash.com/photo-1635324944940-0c0a9c8f9bf1?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8M2QlMjBzcXVhcmV8ZW58MHx8MHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=800&amp;amp;q=60" /></a>
+                                <div class="p-6 rounded-lg dark:divide-undefined">
+                                    <h3
+                                        class="text-xs font-medium title-font text-primary mb-2 text-center uppercase tracking-tighter">
+                                        Step 4</h3>
+                                    <h2
+                                        class="text-gray-900 title-font mb-0 font-heading dark:divide-undefined dark:divide-undefined dark:text-gray-200 text-center text-2xl leading-10 font-bold tracking-tighter">
+                                        Collaborate with designer</h2>
+                                    <p class="text-center">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                                        hexagon disrupt edison bulbche.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <div class="px-3 xl:px-0">
+                <ul class="items-center flex flex-col justify-center gap-2 md:flex-row">
+                    <li class="">
+                        <a class="inline-flex items-center justify-center h-12 px-6 tracking-wide text-white transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-primary rounded-full text-[11px] leading-4 uppercase font-bold border-2 border-primary"
+                            href="#">ESTIMATE PROJECT</a>
+                    </li>
+                    <li class="">
+                        <a class="inline-flex items-center justify-center h-12 px-6 tracking-wide transition duration-200 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none rounded-full border-2 text-[11px] leading-4 uppercase font-bold"
+                            href="#">GET INSPIRED</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+
+
 @endsection
