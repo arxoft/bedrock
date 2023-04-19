@@ -1,26 +1,51 @@
-<div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
-  <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'>
-    <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
-  </div>
-  <div class="container relative mx-auto">
-    <div class="items-center flex flex-wrap">
-      <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-        <div class="pr-12">
-          <h1 class="text-white font-semibold text-5xl">
-            Your story starts with us.
-          </h1>
-          <p class="mt-4 text-lg text-gray-300">
-            This is a simple example of a Landing Page you can build using
-            Tailwind Starter Kit. It features multiple CSS components
-            based on the Tailwindcss design system.
-          </p>
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+  <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+    <div class="grid-cols-1 grid gap-6 md:grid-cols-3">
+      <a
+        class="group h-80 flex items-end bg-gray-100 overflow-hidden shadow-lg relative p-4 rounded-global lg:h-[450px] xl:h-[600px] 2xl:h-[700px]"
+        href="#">
+        <img
+          class="object-cover w-full h-full object-center absolute inset-0 group-hover:scale-110 transition duration-200 bg-gray-50"
+          src="https://images.unsplash.com/photo-1655635949348-953b0e3c140a?ixlib=rb-4.0.3&ampixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ampauto=format&ampfit=crop&ampw=3308&ampq=80"
+        />
+        <div class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"></div>
+        <div class="flex flex-col relative">
+          <span class="text-gray-300">Home</span>
+          <span class="text-white text-lg lg:text-xl font-semibold">
+            Bicycle
+          </span>
         </div>
-      </div>
+      </a>
+      <a
+        class="group h-80 flex items-end overflow-hidden shadow-lg relative p-4 rounded-global bg-gray-50 lg:h-[450px] xl:h-[600px] 2xl:h-[700px]"
+        href="#">
+        <img
+          class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+          src="https://images.unsplash.com/photo-1655635131607-3202827a52a2?ixlib=rb-4.0.3&ampixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ampauto=format&ampfit=crop&ampw=2532&ampq=80"
+        />
+        <div class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"></div>
+        <div class="flex flex-col relative">
+          <span class="text-gray-300">Modern</span>
+          <span class="text-white text-lg lg:text-xl font-semibold">
+            e-Bike
+          </span>
+        </div>
+      </a>
+      <a
+        class="group h-80 flex items-end overflow-hidden shadow-lg relative p-4 rounded-global bg-gray-50 lg:h-[450px] xl:h-[600px] 2xl:h-[700px]"
+        href="#">
+        <img
+          class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+          src="https://images.unsplash.com/photo-1655635131607-3202827a52a2?ixlib=rb-4.0.3&ampixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ampauto=format&ampfit=crop&ampw=2532&ampq=80"
+        />
+        <div class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"></div>
+        <div class="flex flex-col relative">
+          <span class="text-gray-300">Modern</span>
+          <span class="text-white text-lg lg:text-xl font-semibold">
+            e-Bike
+          </span>
+        </div>
+      </a>
     </div>
-  </div>
-  <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px;">
-    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="none" version="1.1" viewbox="0 0 2560 100" x="0" y="0">
-      <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
-    </svg>
   </div>
 </div>

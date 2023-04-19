@@ -3,16 +3,16 @@
 </a>
 
 @include('sections.header')
-{{-- @include('sections.slider') --}}
+@include('sections.slider')
+@include('sections.front-features')
 
   <main id="main" class="main">
     @yield('content')
   </main>
 
-  @hasSection('sidebar')
-    <aside class="sidebar">
-      @yield('sidebar')
-    </aside>
-  @endif
+@include('sections.front-quote')
+@include('sections.front-story')
+@include('sections.front-process')
+@include('sections.front-testimonials')
 
 @include('sections.footer')
